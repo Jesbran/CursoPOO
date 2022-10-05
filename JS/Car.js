@@ -1,4 +1,4 @@
-function Car(licence, driver) {
+/*function Car(licence, driver) {
     this.id;
     this.license = licence;
     this.driver = driver;
@@ -8,5 +8,19 @@ function Car(licence, driver) {
         console.log(this.driver)
         console.log(this.driver.name)
         console.log(this.driver.document)
+    }
+}*/
+//------------new method------------
+class Car{
+    constructor(license, driver){
+        this.id;
+        this.license = license;
+        this.driver = driver;
+        this.passenger;
+    }
+    printDataCar() {
+        console.table(this.driver);
+        console.log(this.driver.name);
+        console.log(this.driver.document);
     }
 }

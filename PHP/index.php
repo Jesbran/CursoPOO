@@ -1,9 +1,11 @@
 <?php
+require_once("car.php");
+require_once("uberX.php");
+require_once("uberBlack.php");
+require_once("account.php");
 
-require_once 'account.php';
-require_once 'car.php';
+$uberX = new UberX("KFP398", new Account("Javier Herrera", "OVP048"), "Chevrolet", "Spark");
+$uberX->printDataCar();
 
-echo "<h1>"."POO whit php"."</h1>";
-
-$Car = new car('FKV97', new account('Maria Sanches', 'OJC88'));
-$Car -> printDataCar();
+$uberBlack = new UberBlack("VVK904", new Account("Samuel Sanchez", "FDF396"), "Dodge", "Attitude");
+$uberBlack->printDataCar();

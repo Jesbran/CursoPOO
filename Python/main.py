@@ -1,5 +1,7 @@
+import imp
 from car import Car
 from account import Account
+from uberX import UberX
 
 def run():
     '''print("Hola mundo")
@@ -13,10 +15,13 @@ def run():
     car2.driver = "Rocio FLores"
     car2.licence = "BCI498"
     car2.passengers = 4
-    print(vars(car2))'''
+    print(vars(car2))
     car = Car('FOP87', Account('Maria Cruz', 'PFV97'))
     print(vars(car))
-    print(vars(car.driver))
+    print(vars(car.driver))'''
+    uberX = UberX('LKJ756', Account('Jose Lopez', 'OIU975'), 'Mercedes', 'A45s')
+    print(vars(uberX))
+    print(vars(uberX.driver))
 
 
 if __name__ == '__main__':

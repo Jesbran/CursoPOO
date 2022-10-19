@@ -4,7 +4,7 @@ from account import Account
 class Car:
     id = int
     licence = str
-    driver = Account('', '')
+    driver = Account('', '', '')
     passengers = int
     
     def __init__(self, licence, driver):

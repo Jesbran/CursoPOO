@@ -2,6 +2,7 @@ import imp
 from car import Car
 from account import Account
 from uberX import UberX
+from driver import Driver
 
 def run():
     '''print("Hola mundo")
@@ -19,9 +20,12 @@ def run():
     car = Car('FOP87', Account('Maria Cruz', 'PFV97'))
     print(vars(car))
     print(vars(car.driver))'''
-    uberX = UberX('LKJ756', Account('Jose Lopez', 'OIU975'), 'Mercedes', 'A45s')
+    uberX = UberX('LKJ756', Account('Jose Lopez', 'OIU975', 'Jose@gmail.com'), 'Mercedes', 'A45s')
     print(vars(uberX))
     print(vars(uberX.driver))
+
+    driver1 = Driver('Tsukasa', 'UIG785', 'Tsukasa@gmail.com')
+    print(vars(driver1))
 
 
 if __name__ == '__main__':

@@ -20,7 +20,9 @@ class Car{
     }
     printDataCar() {
         console.table(this.driver);
+        console.log(this.driver.id);
         console.log(this.driver.name);
         console.log(this.driver.document);
+        console.log(this.driver.email);
     }
 }

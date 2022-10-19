@@ -11,6 +11,6 @@ class Car{
     }
 
     public function printDataCar(){
-        echo "La licencia es:". $this->license. "--El nombre es:". $this->driver->name. "--Su documento:". $this->driver->document;
+        echo "La licencia es:". $this->license. "--El nombre es:". $this->driver->name. "--Su email:". $this->driver->email;
     }
 }

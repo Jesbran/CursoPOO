@@ -3,7 +3,7 @@ class Car{
     public $id;
     public $license;
     public $driver;
-    private $passenger;
+    protected $passenger;
 
     public function __construct($license, Account $driver){ #definiendo constructor "Account" es para enlazarlo con el otro archivo y traer los atributos 'name' etc
         $this -> license = $license;
